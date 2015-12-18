@@ -1,0 +1,41 @@
+<project name="firstproject" basedir="." default="package">
+
+
+     <target name="clean">
+	 
+	     <echo message="thse is target one"/>
+	 
+	 </target>
+	 
+	 
+	 <target name="create">
+	 
+	     <echo message="these is target two"/>
+	 
+	 </target>
+
+
+     <target name="copy">
+	 
+	     <echo message="thes is target three"/>
+	 
+	 </target>
+	 
+	 
+	 <target name="compile">
+	 
+	     <echo message="these is target four"/>
+		 
+	 </target>
+	 
+	 <target name="package" depends="clean,create,copy,compile">
+	 
+	   <echo message="these is target five"/>
+	 
+	 </target>
+	 
+
+
+
+
+</project>
